@@ -1,3 +1,8 @@
+/* font */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 /* body with background picture*/
 body:before {
   content: '';
@@ -15,11 +20,6 @@ body:before {
   transform: scale(1.1);
 }
 
-/* font */
-* {
-  font-family: 'Roboto', sans-serif;
-}
-
 /* form, centers the container */
 .form {
   margin: 0;
@@ -27,6 +27,7 @@ body:before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-family: 'Roboto', sans-serif;
 }
 
 /* container */
