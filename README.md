@@ -6,7 +6,7 @@ Github repoet indeholder også et SQL dump.
 Databasen er lavet i MYSQL og brugeren er oprettet med username: jimmy ou og password: BetterCoachingLuksus. Da funktionaliteten kun skulle kunne logge ind og ud fokuserede 
 jeg mere på at lave den funktionalitet så god som muligt fremfor fx at lave en signup eller forgot password funktion.
 
-Jeg har ikke taget højde for SQL Injections eller password encryptions, men det kan self altid implementeres, dog har jeg sat ekstra fokus på at lave et lækkert design 
+Jeg har ikke taget højde for SQL Injections eller password encryptions, men det kan selvfølgelig altid implementeres, dog har jeg sat ekstra fokus på at lave et lækkert design 
 med flotte knapper, runde hjørner og et baggrundsbillede med gradient. Derudover har jeg benyttet mig af fonten Lato, som er den font type I bruger på bettercoachings egen hjemmeside.
 Jeg har også designet loginsiden så den virker med stort set alle enheder og er dermed designet med responsive design i bagtanken. 
 
