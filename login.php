@@ -20,23 +20,30 @@ session_start();
             //if the username is the same then true
             $result = mysqli_query($con, $query);
 
-                //check if the result is true and the database has more than 1 row
-                if($result && mysqli_num_rows($result) > 0)
+                if($result)
                 {
-                    $user_data = mysqli_fetch_assoc($result);
-
-                    //check if the password is the same as inputted
-                    if($user_data['password'] === $password) 
+                    //check if the result is true and the database has more than 1 row
+                    if($result && mysqli_num_rows($result) > 0)
                     {
-                        //assign the user_data to the session variable or else the check login will send it back to the login screen
-                        $_SESSION['user_id'] = $user_data['user_id'];
-                        //redirect to the index/logged in page
-                        header("Location: index.php");
-                        die;
+                        $user_data = mysqli_fetch_assoc($result);
+
+                        //check if the password is the same as inputted
+                        if($user_data['password'] === $password) 
+                        {
+                            //assign the user_data to the session variable or else the check login will send it back to the login screen
+                            $_SESSION['user_id'] = $user_data['user_id'];
+                            //redirect to the index/logged in page
+                            header("Location: index.php");
+                            die;
+                        }
                     }
                 }
-        }
+                    
+                echo '<script>alert("Incorrect username or password!")</script>';
+        } else
+        {
             echo '<script>alert("Incorrect username or password!")</script>';
+        }
     }
 ?>
 
